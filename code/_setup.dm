@@ -499,6 +499,8 @@ var/const
 #define DEFAULT_POOL_SIZE 50
 //#define DETAILED_POOL_STATS
 
-#define CDN_ENABLED 1
+
+//Shit! Dat CDN-thing does not work!
+#define CDN_ENABLED 0
 
 #define LOOC_RANGE 8

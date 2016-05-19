@@ -1193,5 +1193,5 @@ var/datum/preMapLoad/preMapLoad = new
 #include "libs\JSON\_JSON.dm"
 #include "libs\JSON\JSON Reader.dm"
 #include "libs\JSON\JSON Writer.dm"
-#include "maps\config\map.dm"
+#include "maps\config\destiny.dm"
 // END_INCLUDE
