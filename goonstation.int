@@ -1,11 +1,8 @@
 // BEGIN_INTERNALS
 /*
 LAST_COMPILE_TIME: 1457219709
-DIR: browserassets browserassets\images code code\admin code\chui\example code\datums code\datums\buildmodes code\datums\buildmodes\adventure code\datums\buildmodes\adventure\elements code\datums\chemistry code\datums\chemistry\tools code\datums\critter_mobs\health code\datums\gamemodes code\datums\genetics icons\misc maps maps\config 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 510.1327
-WINDOW: code\datum.dm;code\F_Color_Code2.dm;code\global.dm;code\mob.dm;code\RobustLight2.dm;code\turf.dm;code\world.dm;icons\air_meter.dmi;icons\turf_analysis.dmi;icons\creepy.png;icons\dice20.png;icons\filesave.png;icons\rebuild.png;icons\revert.png;icons\ss13_64.png;icons\ss13_32.png;icons\traitbg.png;icons\misc\lunar.dmi;interface\skin.dmf;browserassets\images\arrowdown.png;browserassets\images\bluebg.png;browserassets\images\map.png;browserassets\images\ss13_32.png;browserassets\images\ss13_64.png;maps\config\destiny.dm;code\_setup.dm;code\admin\admin.dm;code\datums\changelog.dm;code\datums\changelog_old.dm;code\datums\commodity.dm
-FILE: code\datums\commodity.dm
 */
 // END_INTERNALS

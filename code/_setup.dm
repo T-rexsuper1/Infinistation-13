@@ -500,7 +500,6 @@ var/const
 //#define DETAILED_POOL_STATS
 
 
-//Shit! Dat CDN-thing does not work!
-#define CDN_ENABLED 0
+#define CDN_ENABLED 1
 
 #define LOOC_RANGE 8
