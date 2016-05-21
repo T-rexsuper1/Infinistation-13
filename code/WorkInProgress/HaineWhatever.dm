@@ -434,7 +434,7 @@ var/global/list/valid_target_arrival_pads = list()
 	set category = "Commands"
 
 	src.Browse( {"<center><h2>Goonstation RP Server Guidelines and Rules - Test Drive Edition</h2></center><hr>
-	Welcome to the NSS Destiny! Now, since as this server is intended for roleplay, there are some guidelines, rules and tips to make your time fun for everyone!<hr>
+	Welcome to the NSV Destiny! Now, since as this server is intended for roleplay, there are some guidelines, rules and tips to make your time fun for everyone!<hr>
 	<ul style='list-style-type:disc'>
 		<li>Roleplay and have fun!
 			<ul style='list-style-type:circle'>
@@ -487,7 +487,7 @@ var/global/list/valid_target_arrival_pads = list()
 	name = "Space Law"
 	desc = "A book explaining the laws of space. Well, this section of space, at least."
 	icon_state = "book7"
-	info = {"<center><h2>Frontier Justice on the NSS Destiny: A Treatise on Space Law</h2></center>
+	info = {"<center><h2>Frontier Justice on the NSV Destiny: A Treatise on Space Law</h2></center>
 	<h3>A Brief Summary of Space Law</h3><hr>
 	As a Security Officer, the zeroth Space Law that you should probably always obey is to use your common sense. If it is a crime in real life, then it is a crime in this video game. Remember to use your best judgement when arresting criminals, and don't get discouraged if they complain.<br><br>
 	For certain crimes, the accused's intent is important. The difference between Assault and Attempted Murder can be very hard to ascertain, and, when in doubt, you should default to the less serious crime. It is important to note though, that Assault and Attempted Murder are mutually exclusive. You cannot be charged with Assault and Attempted Murder from the same crime as the intent of each is different. Likewise, 'Assault With a Deadly Weapon' and 'Assaulting an Officer' are also crimes that exclude others. Pay careful attention to the requirements of each law and select the one that best fits the crime when deciding sentence.<br><br>

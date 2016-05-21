@@ -1,8 +1,11 @@
 // BEGIN_INTERNALS
 /*
-LAST_COMPILE_TIME: 1457219709
+LAST_COMPILE_TIME: 1463840249
+DIR: browserassets\images browserassets\images\antagTips browserassets\images\chess browserassets\images\genetics code code\chui\example code\datums code\datums\abilities code\obj\item code\obj\item\device code\WorkInProgress code\WorkInProgress\antimatter code\WorkInProgress\regex maps maps\config 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 510.1327
+LAST_COMPILE_VERSION: 510.1340
+WINDOW: browserassets\images\resize.png;browserassets\images\ss13_64.png;browserassets\images\ss13_32.png;browserassets\images\antagTips\auth-disk.png;code\WorkInProgress\regex\Regex.dm;code\obj\item\device\gps.dm;code\procs\station_name.dm;code\WorkInProgress\HaineWhatever.dm;code\_build_config.dm;code\_setup.dm;code\_vox.dm;code\_z_material_properties.dm;code\area.dm;code\atom.dm;code\client.dm;code\hub.dm;code\mob.dm;code\revision.dm;code\soundCache.dm;code\turf.dm;code\turf_autoalign.dm;code\world.dm;code\sd_DynamicAreaLighting.dm;code\admin\admin_verbs.dm;code\WorkInProgress\batman.dm;code\WorkInProgress\MportsStuff.dm;code\WorkInProgress\antimatter\engine.dm;code\WorkInProgress\antimatter\computer.dm;maps\config\destiny.dm;code\datums\gameticker.dm
+FILE: code\WorkInProgress\HaineWhatever.dm
 */
 // END_INTERNALS

@@ -225,7 +225,7 @@
 			qdel(src) //Blah
 
 		return
-
+/*
 proc/splittext(txt as text, sep as text)
     var
         list/accum
@@ -239,7 +239,7 @@ proc/splittext(txt as text, sep as text)
         start = end + lentext(sep)
     while(end)
     return accum
-
+*/
 /datum/objectinfo
 	var/objecttype = null
 	var/direction = 0

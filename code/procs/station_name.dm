@@ -27,7 +27,7 @@
 #endif
 
 	if (map_setting == "DESTINY")
-		name += "NSS Destiny"
+		name += "NSV Destiny"
 	else
 		if (prob(10))
 			name += pick_string("station_name.txt", "prefixes1")

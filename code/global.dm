@@ -99,7 +99,7 @@ var/global
 	machines_may_use_wired_power = 0
 	DBConnection/dbcon				// persistent connection to a mysql server
 	DBQuery/query					// Database query handler
-	regex/url_regex = null
+	regex_deprecated/url_regex = null
 	force_random_names = 0			// for the pre-roundstart thing
 	force_random_looks = 0			// same as above
 

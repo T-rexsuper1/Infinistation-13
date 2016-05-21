@@ -20,7 +20,7 @@
 	data = base64str(data)
 	var/list/ldata = params2list(url_decode(data))
 	var/parsedList[] = new()
-	var/regex/R = new("/(^\\d{1,2})/i")
+	var/regex_deprecated/R = new("/(^\\d{1,2})/i")
 
 	for (var/e = 1, e <= ldata.len, e++) //each field in the format index[fieldkey]=field
 		var/index = ldata[e]

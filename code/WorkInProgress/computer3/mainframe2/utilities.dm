@@ -821,7 +821,7 @@
 
 			. = usr
 			usr = null
-			var/regex/R = new (pattern)
+			var/regex_deprecated/R = new (pattern)
 			usr = .
 			if (!istype(R))
 				mainframe_prog_exit

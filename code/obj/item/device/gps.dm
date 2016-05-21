@@ -24,7 +24,7 @@
 			return
 		if (T.z == 1)
 			if (map_setting == "DESTINY")
-				. =  "Landmark: NSS Destiny"
+				. =  "Landmark: NSV Destiny"
 			else
 				. =  "Landmark: Station"
 		else if (T.z == 2)

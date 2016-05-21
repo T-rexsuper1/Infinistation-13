@@ -116,7 +116,7 @@
 	if (isfile(file))
 		fileText = file2text(file)
 	if (fileText && findtext(fileText, "{{resource"))
-		var/regex/R = new("/\\{\\{resource\\(\"(.*?)\"\\)\\}\\}/\[resource($1)\]/ige")
+		var/regex_deprecated/R = new("/\\{\\{resource\\(\"(.*?)\"\\)\\}\\}/\[resource($1)\]/ige")
 		var/newtxt = R.Replace(fileText)
 		while(newtxt)
 			fileText = newtxt

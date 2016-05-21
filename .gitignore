@@ -1,0 +1,7 @@
+goonstation.dmb
+*.int
+*.rsc
+*.lk
+data/*
+config/*
+!config/example

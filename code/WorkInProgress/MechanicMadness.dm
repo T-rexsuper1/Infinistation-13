@@ -1038,7 +1038,7 @@ var/list/mechanics_telepads = new/list()
 
 	proc/checkstr(var/datum/mechanicsMessage/input)
 		if(level == 2 || !length(expression)) return
-		var/regex/R = new(expression)
+		var/regex_deprecated/R = new(expression)
 
 		if(!R) return
 
@@ -1067,7 +1067,7 @@ var/list/mechanics_telepads = new/list()
 
 		var/inp = input(usr,"Please enter Expression:","Expression setting", expression) as text
 		if(length(inp))
-			var/regex/R = new(inp)
+			var/regex_deprecated/R = new(inp)
 			if(R.error)
 				boutput(usr, "<span style=\"color:red\">[R.error]</span>")
 			else
@@ -1098,7 +1098,7 @@ var/list/mechanics_telepads = new/list()
 
 	proc/checkstr(var/datum/mechanicsMessage/input)
 		if(level == 2 || !length(expression)) return
-		var/regex/R = new(expression)
+		var/regex_deprecated/R = new(expression)
 
 		if(!R) return
 
@@ -1127,7 +1127,7 @@ var/list/mechanics_telepads = new/list()
 
 		var/inp = input(usr,"Please enter Expression:","Expression setting", expression) as text
 		if(length(inp))
-			var/regex/R = new(inp)
+			var/regex_deprecated/R = new(inp)
 			if(R.error)
 				boutput(usr, "<span style=\"color:red\">[R.error]</span>")
 			else

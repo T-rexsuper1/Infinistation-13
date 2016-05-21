@@ -39,6 +39,7 @@ var/list/stinkThingies = list("ass","taint","armpit","excretions","leftovers")
 		else
 			return "[pick(stinkExclamations)], it smells like \a [pick(stinkThings)]'s [pick(stinkThingies)] in here!"
 
+/*
 /proc/replacetext(haystack, needle, replace)
     var
         pos = findtext(haystack, needle)
@@ -49,6 +50,7 @@ var/list/stinkThingies = list("ass","taint","armpit","excretions","leftovers")
             copytext(haystack, pos+needleLen)
         pos = findtext(haystack, needle, pos+replaceLen)
     return haystack
+*/
 
 /proc/replaceText(haystack, needle, replace)
     var

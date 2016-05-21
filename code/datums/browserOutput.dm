@@ -327,7 +327,7 @@ var/global
 I spent so long on this regex I don't want to get rid of it :(
 
 if (findtext(message, "<IMG CLASS=ICON"))
-	var/regex/R = new("/<IMG CLASS=icon SRC=(\\\[.*?\\\]) ICONSTATE='(.*?)'>/\[insertIconImg($1,$2)\]/e")
+	var/regex_deprecated/R = new("/<IMG CLASS=icon SRC=(\\\[.*?\\\]) ICONSTATE='(.*?)'>/\[insertIconImg($1,$2)\]/e")
 	//if (R.Find(message))
 	var/newtxt = R.Replace(message)
 	while(newtxt)

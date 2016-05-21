@@ -217,7 +217,7 @@ proc/vox_playerfilter(var/input as text)
 	if(!istext(input))
 		return
 	var/output = lowertext(input)
-	for(var/regex/R in vox_banned_words)
+	for(var/regex_deprecated/R in vox_banned_words)
 		var/repl = R.Replace(output) //Returns null if match is not made like some turbohitler
 		if(repl)
 			output = repl
@@ -242,7 +242,7 @@ proc/init_vox()
 
 var/global/
 	voxhelp_cache = null
-	list/regex/vox_banned_words = null
+	list/regex_deprecated/vox_banned_words = null
 	list/voxtokens = list(
 "$fx" = FX,
 "$noun" = NOUN,

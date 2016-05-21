@@ -33,7 +33,7 @@
 	content += file2text(http["CONTENT"])
 	var/deletelinkpre = text("<A href='?src=\ref[src];action=notes2;target=[player];type=del;id=")
 	var/deletelinkpost = text("'>(DEL)")
-	var/regex/R = new("/!!ID(\\d+)/[deletelinkpre]$1[deletelinkpost]/")
+	var/regex_deprecated/R = new("/!!ID(\\d+)/[deletelinkpre]$1[deletelinkpost]/")
 
 	var/newcontent = R.Replace(content)
 	while(newcontent)
