@@ -982,6 +982,12 @@ var/list/hasvar_type_cache = list()
 	return locate(x,y,A.z)
 
 
+// sanitize for cyrillic text.
+/proc/replace_characters(var/t,var/list/repl_chars)
+	for(var/char in repl_chars)
+		t = replacetext(t, char, repl_chars[char])
+	return t
+
 // returns turf relative to A offset in dx and dy tiles
 // bound to map limits
 /proc/get_offset_target_turf(var/atom/A, var/dx, var/dy)
@@ -989,11 +995,33 @@ var/list/hasvar_type_cache = list()
 	var/y = min(world.maxy, max(1, A.y + dy))
 	return locate(x,y,A.z)
 
+//ß letter
+/proc/sanitize_simple(t,list/repl_chars = list("ÿ"="____255_"))
+	for(var/char in repl_chars)
+		var/index = findtext(t, char)
+		while(index)
+			t = copytext(t, 1, index) + repl_chars[char] + copytext(t, index+1)
+			index = findtext(t, char, index+1)
+	return t // fuk
+
+//Runs byond's sanitization proc along-side sanitize_simple
+/proc/sanitize_c(t,list/repl_chars = null)
+	t = html_encode(trim(sanitize_simple(t, repl_chars)))
+	t = replacetext(t, "____255_", "&#1103;")
+	return t
+
+
 // extends pick() to associated lists
 /proc/alist_pick(var/list/L)
 	if(!L || !L.len)
 		return null
 	return L[pick(L)]
+
+/proc/sanitize_a0(t)
+	t = html_encode(trim(sanitize_simple(t)))
+	// Workaround for ÿ letter. I fucking can't get this shit working! Someone fix it, plzzz.
+	t = replacetext(t, "____255_", "ß") // For now I only be able to replace it with uppercase ß. HTML codes doesn't do the trick.
+	return t
 
 /proc/ran_zone(zone, probability)
 

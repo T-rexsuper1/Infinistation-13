@@ -9,7 +9,9 @@
 	if (src.ismuted())
 		return
 
-	msg = copytext(sanitize(html_encode(msg)), 1, MAX_MESSAGE_LEN)
+	//msg = copytext(sanitize(html_encode(msg)), 1, MAX_MESSAGE_LEN)
+	msg = sanitize_c(msg)
+
 	logTheThing("admin", src, null, "ASAY: [msg]")
 	logTheThing("diary", src, null, "ASAY: [msg]", "admin")
 
@@ -36,7 +38,9 @@
 	if (src.ismuted())
 		return
 
-	msg = copytext(sanitize(msg), 1, MAX_MESSAGE_LEN)
+	msg = sanitize_c(msg)
+
+	//msg = copytext(sanitize(msg), 1, MAX_MESSAGE_LEN)
 
 	if (!msg)
 		return

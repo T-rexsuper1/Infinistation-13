@@ -25,7 +25,9 @@
 	return P.hits_ghosts
 
 /mob/dead/say(var/message)
-	message = trim(copytext(sanitize(message), 1, MAX_MESSAGE_LEN))
+	message = sanitize_c(message)
+
+	//message = trim(copytext(sanitize(message), 1, MAX_MESSAGE_LEN))
 
 	if (!message)
 		return

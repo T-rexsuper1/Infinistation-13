@@ -10,7 +10,9 @@
 		boutput(src, "You are currently muted and cannot use deadsay.")
 		return
 
-	msg = copytext(sanitize(html_encode(msg)), 1, MAX_MESSAGE_LEN)
+	//msg = copytext(sanitize(html_encode(msg)), 1, MAX_MESSAGE_LEN)
+	msg = sanitize_c(msg)
+
 	logTheThing("admin", src, null, "DSAY: [msg]")
 	logTheThing("diary", src, null, "DSAY: [msg]", "admin")
 

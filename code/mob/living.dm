@@ -381,7 +381,9 @@
 					src.emote("handpuppet")
 
 /mob/living/say(var/message)
-	message = trim(copytext(sanitize_noencode(message), 1, MAX_MESSAGE_LEN))
+	// They do not encode message, but I will do cuz I can.
+	message = trim(copytext(sanitize_a0(message), 1, MAX_MESSAGE_LEN))
+	//message = trim(copytext(sanitize_noencode(sanitize_a0(message)), 1, MAX_MESSAGE_LEN))
 
 	if (!message)
 		return
@@ -1069,3 +1071,5 @@
 		mob_static_icons.Add(src.static_image)
 		DEBUG(bicon(src.static_image))
 		return src.static_image
+
+

@@ -2042,7 +2042,9 @@
 		boutput(usr, "<b>Deadchat is currently disabled.</b>")
 		return
 
-	message = trim(copytext(html_encode(sanitize(message)), 1, MAX_MESSAGE_LEN))
+	// For what the fuck is this needed?
+	//message = trim(copytext(html_encode(sanitize(message)), 1, MAX_MESSAGE_LEN))
+	message = sanitize_c(message)
 	if (!message)
 		return
 
@@ -2332,7 +2334,8 @@
 		boutput(src, "You are currently banned from using OOC and LOOC, you may appeal at http://forum.ss13.co/index.php")
 		return
 
-	msg = trim(copytext(html_encode(sanitize(msg)), 1, MAX_MESSAGE_LEN))
+	//msg = trim(copytext(html_encode(sanitize(msg)), 1, MAX_MESSAGE_LEN))
+	msg = sanitize_c(msg)
 	if (!msg)
 		return
 	else if (!src.client.preferences.listen_ooc)
@@ -2411,7 +2414,9 @@
 		boutput(src, "You are currently banned from using OOC and LOOC, you may appeal at http://forum.ss13.co/index.php")
 		return
 
-	msg = trim(copytext(html_encode(sanitize(msg)), 1, MAX_MESSAGE_LEN))
+	//msg = trim(copytext(html_encode(sanitize(msg)), 1, MAX_MESSAGE_LEN))
+	msg = sanitize_c(msg)
+
 	if (!msg)
 		return
 	else if (!src.client.preferences.listen_looc)

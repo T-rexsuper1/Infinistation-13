@@ -622,7 +622,9 @@ var/f_color_selector_handler/F_Color_Selector
 				var/nick = plist["nick"]
 				var/msg = plist["msg"]
 
-				msg = trim(copytext(sanitize(msg), 1, MAX_MESSAGE_LEN))
+				//msg = trim(copytext(sanitize(msg), 1, MAX_MESSAGE_LEN))
+				msg = sanitize_c(msg)
+
 				logTheThing("ooc", nick, null, "OOC: [msg]")
 				logTheThing("diary", nick, null, ": [msg]", "ooc")
 				var/rendered = "<span class=\"adminooc\"><span class=\"prefix\">OOC:</span> <span class=\"name\">[nick]:</span> <span class=\"message\">[msg]</span></span>"
@@ -639,7 +641,8 @@ var/f_color_selector_handler/F_Color_Selector
 			if("asay")
 				var/nick = plist["nick"]
 				var/msg = plist["msg"]
-				msg = trim(copytext(sanitize(msg), 1, MAX_MESSAGE_LEN))
+
+				msg = sanitize_c(msg)
 
 				logTheThing("admin", null, null, "IRC ASAY: [nick]: [msg]")
 				logTheThing("diary", null, null, "IRC ASAY: [nick]: [msg]", "admin")
