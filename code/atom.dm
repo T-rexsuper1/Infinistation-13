@@ -394,6 +394,7 @@ obj
 	var/throw_range = 7
 	var/throwforce = 1
 	var/soundproofing = 5
+	glide_size = 8
 
 /atom/movable/overlay
 	var/atom/master = null
